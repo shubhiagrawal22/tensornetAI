@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Vazirmatn:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Vazirmatn:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Vazirmatn:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -12,10 +13,16 @@
   /* background-color: #0D0D0D; */
 }
 
+.App {
+  background-color: #0d0d0d;
+}
+
 .nav-container {
   background-color: rgba(0, 0, 0, 0.31);
   color: white;
   width: 100%;
+  /* position: absolute;
+  top: 0%; */
 }
 
 .navbar-nav a {
@@ -59,6 +66,19 @@
   font-family: "ABeeZee", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+.nav-fluid {
+  padding: 0px 60px !important;
+}
+
+@media (max-width: 500px) {
+  .nav-fluid {
+    padding: 0 20px !important;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
 }
 
 .navbar-brand p {
@@ -114,6 +134,8 @@
   background-color: #0d0d0d;
 }
 
+
+
 .generate-heading {
   font-family: "Montserrat", sans-serif;
   font-size: 45px;
@@ -129,19 +151,43 @@
 .form-inline {
   box-shadow: 0px 4px 97px 0px #3e2487;
   background-color: #1c1f28;
+  border: 1px solid #3E2487;
+  border-radius: 15px;
 }
 
 .input-group span {
   color: white;
   background-color: #1c1f28;
   border: 0;
+  margin: 2px;
   padding: 15px;
+}
+
+.search-icon i {
+  margin-top: 8px;
+}
+
+.input-group-append span {
+  background-color: #272b34;
+  border-radius: 10px;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-group input {
   background-color: #1c1f28;
   border: 0;
-  padding: 15px;
+  /* padding: 15px; */
+}
+
+.input-group input:focus {
+  background-color: transparent;
+  color: white;
+  border: 0;
 }
 
 .input-group input::placeholder {
@@ -167,6 +213,12 @@
   border: 2px solid white;
 }
 
+.generate-image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .generate-image img {
   width: 100%;
 }
@@ -182,6 +234,7 @@
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  background-color: #0d0d0d;
 }
 
 .main-content h1 {
@@ -189,10 +242,16 @@
   font-size: 55px;
   font-weight: 700;
   color: white;
+  padding-top: 2rem;
 }
 
 .main-content span {
   color: #4c2ba9;
+  display: block;
+}
+
+.typed-cursor {
+  visibility: hidden !important;
 }
 
 .main-content p {
@@ -206,6 +265,7 @@
 
 .main-button {
   display: flex;
+  padding-top: 2rem;
 }
 
 .main-banner-con {
@@ -231,7 +291,9 @@
 .main-button button:hover {
   background-color: #4c2ba9;
   color: white;
+  box-shadow: 0 5px 35px 0px #3e2487;
 }
+
 
 .provider {
   background-color: #0d0d0d;
@@ -273,6 +335,369 @@
   width: 100%;
 }
 
+.news {
+  background-color: #0d0d0d;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.news-cards {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
 .news-image img {
   width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
+
+.news-card-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4c2ba9;
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.news-card-content img {
+  padding-right: 0.5rem;
+}
+
+.news-card-content i {
+  color: #4c2ba9;
+  padding-right: 0.5rem;
+}
+
+.news-card-content h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: white;
+  padding: 1.25rem;
+}
+
+.bi-calendar-week {
+  color: #4c2ba9;
+}
+
+.news-card-content span {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8acb7;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.news-card1 {
+  border-radius: 10px;
+  padding-bottom: 1rem;
+}
+
+.news-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c2ba9;
+}
+
+.news-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  padding: 3rem;
+}
+
+.footer-heading {
+  padding-top: 1.5rem;
+  padding-left: 4rem !important;
+}
+
+.footer-heading h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footerlogo {
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer-logo p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    90deg,
+    #4c2ba9 0%,
+    rgba(142, 123, 198, 0.79) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-heading p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a8acb7;
+  padding-top: 1.75rem;
+}
+.footer-heading h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a8acb7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-input-group {
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  border: 0 !important;
+  margin-top: 3rem;
+}
+
+.social-icons i {
+  color: #a8acb7;
+  padding-right: 1rem;
+}
+
+
+
+.social-icons i:hover {
+  color: #3e2487;
+  text-shadow: 0 0 5px #3e2487;
+
+}
+
+
+.footer-list {
+  padding: 1.25rem;
+}
+
+.footer-signup {
+  padding-right: 3rem !important;
+}
+
+.footer-list h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.list-items {
+  padding-top: 1rem;
+}
+
+.footer-list li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.footer-list a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #a8acb7;
+  padding-top: 0.75rem;
+}
+
+.footer-list i {
+  font-size: 16px;
+  font-weight: 900;
+  color: #4c2ba9;
+}
+
+.footer-button span {
+  width: 100px;
+  height: 60px;
+  background-color: #4c2ba9;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu {
+  background-image: url("./assets/frame.png");
+  background-repeat: no-repeat;
+  background-color: #0d0d0d;
+  padding-bottom: 2rem;
+}
+
+.menu-content {
+  padding: 1rem !important;
+}
+
+.menu-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: white;
+}
+
+.about {
+  background-image: url("./assets/Frame2.png");
+  background-repeat: no-repeat;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-content {
+  padding-top: 0.5rem;
+} 
+
+.about-content h5 {
+  display: inline;
+  padding: 8px 40px;
+  color: white;
+  background-color: #4c2ba94a;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 75px;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+}
+
+.about-content span {
+  color: #4c2ba9;
+}
+
+.about-content p {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #cbcbcb;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+}
+
+.number-card h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0rem !important;
+  color: white;
+}
+
+.number-card p {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding-top: 0rem !important;
+}
+
+.about-button button {
+  background-color: #4c2ba9;
+  border: 2px solid #4c2ba9;
+  border-radius: 5px;
+  padding: 8px 25px;
+  color: white;
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-button button:hover {
+  background-color: #0d0d0d;
+  border: 2px solid white;
+}
+
+@media(max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card1 {
+    border-right: none;
+    border-bottom: 2.88px solid #c4c4c43b;
+    margin-bottom: 1rem !important;
+  }
+  .generate-image {
+    justify-content: center;
+  }
+
+  .about-image {
+    margin-bottom: 1rem;
+  }
+  .about-button {
+    display: flex;
+    justify-content: center;
+  }
+  .provider-image{
+    flex-wrap: wrap;
+    /* display: block; */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+  }
+  .news-cards {
+    flex-wrap: wrap;
+  }
+  .news-card1 {
+    margin-bottom: 10px;
+  }
+  .mobile-footer {
+    padding-left: 4rem !important;
+  }
+  .footer-signup {
+    padding-left: 4rem !important;
+  }
+  
+} 

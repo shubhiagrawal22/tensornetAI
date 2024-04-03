@@ -2,6 +2,8 @@ import React from "react";
 import card1 from "../assets/card1.png";
 import card2 from "../assets/card2.png";
 import card3 from "../assets/card3.png";
+import symbol from "../assets/Symbol.png";
+import profile from "../assets/profile.png";
 
 const News = () => {
   return (
@@ -11,18 +13,18 @@ const News = () => {
           <p>Latest Posts</p>
           <h1>News & Articles</h1>
         </div>
-        <div className="news-cards d-flex justify-content-evenly">
+        <div className="news-cards">
           <div className="col-lg-4 news-card1 bg-black mx-3">
             <div className="news-image">
               <img src={card1} alt="" />
             </div>
             <div className="news-card-content text-white">
               <p>
-                <i className="bi bi-profile"></i> Caroline Forsey
+              <img src={profile} alt="" /> Caroline Forsey
               </p>
               <h2>The Top Benefits of AI for Marketers, State of AI Data</h2>
-              <span><i className="bi bi-calender"></i> 25 June 2023</span>
-              <span><i className="bi bi-comment"></i> 0 Comments</span>
+              <span><i className="bi bi-calendar-week"></i> 25 June 2023</span>
+              <span><img src={symbol} alt="" /> 0 Comments</span>
 
             </div>
           </div>
@@ -32,11 +34,11 @@ const News = () => {
             </div>
             <div className="news-card-content text-white">
               <p>
-                <i className="bi bi-profile"></i> Caroline Forsey
+              <img src={profile} alt="" /> Caroline Forsey
               </p>
               <h2>The Top Benefits of AI for Marketers, State of AI Data</h2>
-              <span><i className="bi bi-calender"></i> 25 June 2023</span>
-              <span><i className="bi bi-comment"></i> 0 Comments</span>
+              <span><i className="bi bi-calendar-week"></i> 25 June 2023</span>
+              <span><img src={symbol} alt="" /> 0 Comments</span>
 
             </div>
           </div>
@@ -46,14 +48,15 @@ const News = () => {
             </div>
             <div className="news-card-content text-white">
               <p>
-                <i className="bi bi-profile"></i> Caroline Forsey
+              <img src={profile} alt="" /> Caroline Forsey
               </p>
               <h2>The Top Benefits of AI for Marketers, State of AI Data</h2>
-              <span><i className="bi bi-calender"></i> 25 June 2023</span>
-              <span><i className="bi bi-comment"></i> 0 Comments</span>
+              <span><i className="bi bi-calendar-week"></i> 25 June 2023</span>
+              <span><img src={symbol} alt="" /> 0 Comments</span>
 
             </div>
           </div>
+
         </div>
       </div>
     </div>

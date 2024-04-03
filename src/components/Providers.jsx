@@ -12,20 +12,20 @@ const Providers = () => {
                 <p>Our Trusted Service Partners</p>
                 <h1>Providers & Collaborators</h1>
             </div>
-            <div className="provider-image p-3">
-                <div className="col-lg-2 pro-img">
+            <div className="row provider-image p-3">
+                <div className="col-lg-2 col-6 pro-img">
                     <img src={gcloud} alt="" />
                 </div>
-                <div className="col-lg-2 pro-img">
+                <div className="col-lg-2 col-6 pro-img">
                     <img src={aws} alt="" />
                 </div>
-                <div className="col-lg-2 pro-img">
+                <div className="col-lg-2 col-6 pro-img">
                     <img src={nvd} alt="" />
                 </div>
-                <div className="col-lg-2 pro-img">
+                <div className="col-lg-2 -col-6 pro-img">
                     <img src={google} alt="" />
                 </div>
-                <div className="col-lg-2 pro-img">
+                <div className="col-lg-2 col-6 pro-img">
                     <img src={gcloud} alt="" />
                 </div>
             </div>

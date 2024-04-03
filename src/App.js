@@ -1,20 +1,18 @@
 import './App.css';
-import Banner from './components/Banner';
-import Cards from './components/Cards';
-import Generate from './components/Generate';
-import Header from './components/Header';
-import News from './components/News';
-import Providers from './components/Providers';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Cards />
-      <Generate />
-      <Providers />
-      <News />
+        <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
+
+      
     </div>
   );
 }

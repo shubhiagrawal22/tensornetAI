@@ -18,8 +18,8 @@ const Generate = () => {
             <form className="form-inline">
               <div className="input-group">
                 <div className="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">
-                    <i class="bi bi-search text-white"></i>
+                  <span className="input-group-text search-icon" id="basic-addon1">
+                    <i className="bi bi-search text-white"></i>
                   </span>
                 </div>
                 <input
@@ -30,7 +30,7 @@ const Generate = () => {
                   aria-describedby="basic-addon1"
                 />
                 <div className="input-group-append">
-                  <span class="input-group-text" id="basic-addon1">
+                  <span className="input-group-text" id="basic-addon1">
                     <img src={star} alt="" />
                   </span>
                 </div>
@@ -38,7 +38,7 @@ const Generate = () => {
             </form>
           </div>
         </div>
-        <div className="generate-image d-flex justify-content-between flex-wrap p-4">
+        <div className="generate-image p-4">
           <div className="col-lg-4 p-2">
             <img src={scene} alt="" />
           </div>
